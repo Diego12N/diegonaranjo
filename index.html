@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diego Naranjo — UI / UX Designer</title>
+<meta name="description" content="Diego Naranjo, UI / UX Designer en Córdoba, Argentina. Diseño de interfaces para productos digitales y e-commerce, con conocimientos de HTML y CSS.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diego Naranjo — UI / UX Designer">
+<meta property="og:description" content="Diseño de interfaces para productos digitales y e-commerce, con conocimientos de HTML y CSS. Córdoba, Argentina · Remoto o híbrido.">
+<meta name="theme-color" content="#09080c">
+<meta name="color-scheme" content="dark">
+<meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
+<!-- Al publicar: reemplazar por la URL absoluta de la imagen (por ejemplo https://tu-usuario.github.io/assets/images/og-image.png) y agregar og:url -->
+<meta property="og:image" content="assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Diego Naranjo — UI / UX Designer">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309080c'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,sans-serif' font-weight='800' font-size='28' fill='%23ff6a55'%3EDN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="js/boot.js"></script>
+<link rel="modulepreload" href="js/main.js">
+<link rel="modulepreload" href="js/modules/case-study.js">
+<link rel="modulepreload" href="js/modules/data/banners.js">
+<link rel="modulepreload" href="js/modules/data/logos.js">
+<link rel="modulepreload" href="js/modules/data/projects.js">
+<link rel="modulepreload" href="js/modules/data/site.js">
+<link rel="modulepreload" href="js/modules/data/texts.js">
+<link rel="modulepreload" href="js/modules/home.js">
+<link rel="modulepreload" href="js/modules/i18n.js">
+<link rel="modulepreload" href="js/modules/morph3d.js">
+<link rel="modulepreload" href="js/modules/motion.js">
+<link rel="modulepreload" href="js/modules/pages.js">
+<link rel="modulepreload" href="js/modules/router.js">
+<link rel="modulepreload" href="js/modules/sections.js">
+<link rel="modulepreload" href="js/modules/showcase.js">
+<link rel="modulepreload" href="js/modules/transitions.js">
+<link rel="modulepreload" href="js/modules/utils.js">
+<link rel="modulepreload" href="js/modules/visual.js">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections/home.css">
+<link rel="stylesheet" href="css/sections/identity.css">
+<link rel="stylesheet" href="css/sections/work.css">
+<link rel="stylesheet" href="css/sections/case-study.css">
+<link rel="stylesheet" href="css/sections/visual.css">
+<link rel="stylesheet" href="css/sections/pages.css">
+</head>
+<body class="on-home">
+
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-name"><span><i>Diego</i></span><span><i>Naranjo</i></span></div>
+  <p class="loader-role">UI / UX Designer</p>
+  <div class="loader-track"><div class="loader-bar"><i id="loaderBar"></i></div><p class="loader-pct" id="loaderPct">0</p></div>
+</div>
+
+<div class="fx" id="fx" aria-hidden="true"><p class="fx-label" id="fxLabel"></p></div>
+<div class="progress" id="progress" hidden></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"><span class="cursor-label" id="cursorLabel"></span></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Diego Naranjo</a>
+    <div class="nav-tools">
+      <button type="button" class="icon-btn motion-btn motion-toggle" aria-pressed="false" data-i18n-aria="navPause" aria-label="Pausar movimiento">❚❚</button>
+      <div class="lang" role="group" data-i18n-aria="langGroup" aria-label="Idioma">
+        <button type="button" data-lang="es" lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-ghost btn-sm" data-cv="short" href="CV_Diego_Naranjo_ES.pdf">CV</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ===================== INICIO: perfil a pantalla completa + tarjetas flotantes ===================== -->
+  <section class="stage" id="home" aria-labelledby="heroName">
+    <div class="glow glow-a" aria-hidden="true"></div>
+    <div class="glow glow-b" aria-hidden="true"></div>
+    <div class="mega" aria-hidden="true"><span>UI · UX · DESIGN ·</span><span>UI · UX · DESIGN ·</span><span>UI · UX · DESIGN ·</span><span>UI · UX · DESIGN ·</span></div>
+    <div class="stage-inner">
+      <div class="intro-col" id="introCol"></div>
+      <div class="goo-cell" id="gooCell" aria-hidden="true">
+        <svg class="goo" viewBox="0 0 400 400" aria-hidden="true">
+          <defs>
+            <filter id="gooF"><feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b"/>
+              <feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="g"/>
+              <feComposite in="SourceGraphic" in2="g" operator="atop"/></filter>
+            <radialGradient id="gV" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#d9ccff"/><stop offset=".4" stop-color="#7b5cff"/><stop offset="1" stop-color="#2a1680"/></radialGradient>
+            <radialGradient id="gO" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffe0c2"/><stop offset=".45" stop-color="#ff8a4c"/><stop offset="1" stop-color="#b8433a"/></radialGradient>
+          </defs>
+          <g filter="url(#gooF)">
+            <circle class="gb gb1" cx="200" cy="190" r="78" fill="url(#gV)"/>
+            <circle class="gb gb2" cx="120" cy="120" r="46" fill="url(#gV)"/>
+            <circle class="gb gb3" cx="285" cy="120" r="50" fill="url(#gO)"/>
+            <circle class="gb gb4" cx="130" cy="285" r="44" fill="url(#gO)"/>
+            <circle class="gb gb5" cx="290" cy="285" r="52" fill="url(#gV)"/>
+          </g>
+        </svg>
+      </div>
+      <nav class="rail" id="rail" data-i18n-aria="railLabel" aria-label="Secciones"></nav>
+    </div>
+  </section>
+
+  <!-- ===================== VISTA AMPLIADA (caso o sección) ===================== -->
+  <div class="view" id="view" hidden>
+    <div class="sec-bg" aria-hidden="true">
+      <i class="sec-pat" data-sec="caps"></i><i class="sec-pat" data-sec="work"></i><i class="sec-pat" data-sec="profile"></i>
+      <svg class="sec-motif" data-sec="caps" viewBox="0 0 560 480"><defs><radialGradient id="isoFade-capsG" cx="50%" cy="62%" r="50%"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><mask id="isoFade-caps"><rect width="560" height="480" fill="url(#isoFade-capsG)"/></mask></defs><g class="iso-floor" mask="url(#isoFade-caps)"><g transform="translate(270 300)"><line x1="0.0" y1="-238.0" x2="-412.2" y2="0.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="0.0" y1="-238.0" x2="412.2" y2="0.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="29.4" y1="-221.0" x2="-382.8" y2="17.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-29.4" y1="-221.0" x2="382.8" y2="17.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="58.9" y1="-204.0" x2="-353.3" y2="34.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-58.9" y1="-204.0" x2="353.3" y2="34.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="88.3" y1="-187.0" x2="-323.9" y2="51.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-88.3" y1="-187.0" x2="323.9" y2="51.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="117.8" y1="-170.0" x2="-294.4" y2="68.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-117.8" y1="-170.0" x2="294.4" y2="68.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="147.2" y1="-153.0" x2="-265.0" y2="85.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-147.2" y1="-153.0" x2="265.0" y2="85.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="176.7" y1="-136.0" x2="-235.6" y2="102.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-176.7" y1="-136.0" x2="235.6" y2="102.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="206.1" y1="-119.0" x2="-206.1" y2="119.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-206.1" y1="-119.0" x2="206.1" y2="119.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="235.6" y1="-102.0" x2="-176.7" y2="136.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-235.6" y1="-102.0" x2="176.7" y2="136.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="265.0" y1="-85.0" x2="-147.2" y2="153.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-265.0" y1="-85.0" x2="147.2" y2="153.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="294.4" y1="-68.0" x2="-117.8" y2="170.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-294.4" y1="-68.0" x2="117.8" y2="170.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="323.9" y1="-51.0" x2="-88.3" y2="187.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-323.9" y1="-51.0" x2="88.3" y2="187.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="353.3" y1="-34.0" x2="-58.9" y2="204.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-353.3" y1="-34.0" x2="58.9" y2="204.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="382.8" y1="-17.0" x2="-29.4" y2="221.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-382.8" y1="-17.0" x2="29.4" y2="221.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="412.2" y1="0.0" x2="0.0" y2="238.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-412.2" y1="0.0" x2="0.0" y2="238.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/></g></g><g transform="translate(260 170)"><g class="m-float"><polygon points="-95.3,55.0 0.0,110.0 0.0,0.0 -95.3,-55.0" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="95.3,55.0 0.0,110.0 0.0,0.0 95.3,-55.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0.0,-110.0 95.3,-55.0 0.0,0.0 -95.3,-55.0" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.5" stroke-linejoin="round"/><line x1="47.6" y1="-82.5" x2="-47.6" y2="-27.5" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 6"/><line x1="-47.6" y1="-82.5" x2="47.6" y2="-27.5" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 6"/></g></g><g transform="translate(430 70)"><g class="m-float2"><polygon points="-41.6,24.0 0.0,48.0 0.0,0.0 -41.6,-24.0" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="41.6,24.0 0.0,48.0 0.0,0.0 41.6,-24.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0.0,-48.0 41.6,-24.0 0.0,0.0 -41.6,-24.0" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.5" stroke-linejoin="round"/></g></g></svg>
+      <svg class="sec-motif" data-sec="work" viewBox="0 0 560 480"><defs><radialGradient id="isoFade-workG" cx="50%" cy="62%" r="50%"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><mask id="isoFade-work"><rect width="560" height="480" fill="url(#isoFade-workG)"/></mask></defs><g class="iso-floor" mask="url(#isoFade-work)"><g transform="translate(270 300)"><line x1="0.0" y1="-238.0" x2="-412.2" y2="0.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="0.0" y1="-238.0" x2="412.2" y2="0.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="29.4" y1="-221.0" x2="-382.8" y2="17.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-29.4" y1="-221.0" x2="382.8" y2="17.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="58.9" y1="-204.0" x2="-353.3" y2="34.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-58.9" y1="-204.0" x2="353.3" y2="34.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="88.3" y1="-187.0" x2="-323.9" y2="51.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-88.3" y1="-187.0" x2="323.9" y2="51.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="117.8" y1="-170.0" x2="-294.4" y2="68.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-117.8" y1="-170.0" x2="294.4" y2="68.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="147.2" y1="-153.0" x2="-265.0" y2="85.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-147.2" y1="-153.0" x2="265.0" y2="85.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="176.7" y1="-136.0" x2="-235.6" y2="102.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-176.7" y1="-136.0" x2="235.6" y2="102.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="206.1" y1="-119.0" x2="-206.1" y2="119.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-206.1" y1="-119.0" x2="206.1" y2="119.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="235.6" y1="-102.0" x2="-176.7" y2="136.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-235.6" y1="-102.0" x2="176.7" y2="136.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="265.0" y1="-85.0" x2="-147.2" y2="153.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-265.0" y1="-85.0" x2="147.2" y2="153.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="294.4" y1="-68.0" x2="-117.8" y2="170.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-294.4" y1="-68.0" x2="117.8" y2="170.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="323.9" y1="-51.0" x2="-88.3" y2="187.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-323.9" y1="-51.0" x2="88.3" y2="187.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="353.3" y1="-34.0" x2="-58.9" y2="204.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-353.3" y1="-34.0" x2="58.9" y2="204.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="382.8" y1="-17.0" x2="-29.4" y2="221.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-382.8" y1="-17.0" x2="29.4" y2="221.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="412.2" y1="0.0" x2="0.0" y2="238.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-412.2" y1="0.0" x2="0.0" y2="238.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/></g></g><g transform="translate(240 230)"><g class="m-float"><polygon points="-10.4,6.0 162.8,106.0 162.8,-34.0 -10.4,-134.0" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="173.2,100.0 162.8,106.0 162.8,-34.0 173.2,-40.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0.0,-140.0 173.2,-40.0 162.8,-34.0 -10.4,-134.0" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.5" stroke-linejoin="round"/><polygon points="-1.7,-107.0 154.2,-17.0 154.2,-29.0 -1.7,-119.0" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/><polygon points="-1.7,-59.0 93.5,-4.0 93.5,-42.0 -1.7,-97.0" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.1" stroke-linejoin="round"/><polygon points="102.2,1.0 154.2,31.0 154.2,-7.0 102.2,-37.0" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/><polygon points="-1.7,-3.0 45.0,24.0 45.0,-22.0 -1.7,-49.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/><polygon points="52.8,28.5 99.6,55.5 99.6,9.5 52.8,-17.5" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/><polygon points="107.4,60.0 154.2,87.0 154.2,41.0 107.4,14.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/></g></g><g transform="translate(430 262)"><g class="m-float2"><polygon points="-8.7,5.0 46.8,37.0 46.8,-81.0 -8.7,-113.0" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="55.4,32.0 46.8,37.0 46.8,-81.0 55.4,-86.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0.0,-118.0 55.4,-86.0 46.8,-81.0 -8.7,-113.0" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.5" stroke-linejoin="round"/><polygon points="-1.7,-61.0 39.8,-37.0 39.8,-73.0 -1.7,-97.0" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.1" stroke-linejoin="round"/><polygon points="-1.7,-43.0 27.7,-26.0 27.7,-34.0 -1.7,-51.0" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/><polygon points="-1.7,-5.0 17.3,6.0 17.3,-24.0 -1.7,-35.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/><polygon points="20.8,8.0 39.8,19.0 39.8,-11.0 20.8,-22.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/></g></g></svg>
+      <svg class="sec-motif" data-sec="profile" viewBox="0 0 560 480"><defs><radialGradient id="isoFade-profileG" cx="50%" cy="62%" r="50%"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><mask id="isoFade-profile"><rect width="560" height="480" fill="url(#isoFade-profileG)"/></mask></defs><g class="iso-floor" mask="url(#isoFade-profile)"><g transform="translate(270 300)"><line x1="0.0" y1="-238.0" x2="-412.2" y2="0.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="0.0" y1="-238.0" x2="412.2" y2="0.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="29.4" y1="-221.0" x2="-382.8" y2="17.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-29.4" y1="-221.0" x2="382.8" y2="17.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="58.9" y1="-204.0" x2="-353.3" y2="34.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-58.9" y1="-204.0" x2="353.3" y2="34.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="88.3" y1="-187.0" x2="-323.9" y2="51.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-88.3" y1="-187.0" x2="323.9" y2="51.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="117.8" y1="-170.0" x2="-294.4" y2="68.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-117.8" y1="-170.0" x2="294.4" y2="68.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="147.2" y1="-153.0" x2="-265.0" y2="85.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-147.2" y1="-153.0" x2="265.0" y2="85.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="176.7" y1="-136.0" x2="-235.6" y2="102.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-176.7" y1="-136.0" x2="235.6" y2="102.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="206.1" y1="-119.0" x2="-206.1" y2="119.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-206.1" y1="-119.0" x2="206.1" y2="119.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="235.6" y1="-102.0" x2="-176.7" y2="136.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-235.6" y1="-102.0" x2="176.7" y2="136.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="265.0" y1="-85.0" x2="-147.2" y2="153.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-265.0" y1="-85.0" x2="147.2" y2="153.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="294.4" y1="-68.0" x2="-117.8" y2="170.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-294.4" y1="-68.0" x2="117.8" y2="170.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="323.9" y1="-51.0" x2="-88.3" y2="187.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-323.9" y1="-51.0" x2="88.3" y2="187.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="353.3" y1="-34.0" x2="-58.9" y2="204.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-353.3" y1="-34.0" x2="58.9" y2="204.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="382.8" y1="-17.0" x2="-29.4" y2="221.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-382.8" y1="-17.0" x2="29.4" y2="221.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="412.2" y1="0.0" x2="0.0" y2="238.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/><line x1="-412.2" y1="0.0" x2="0.0" y2="238.0" stroke="currentColor" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round"/></g></g><g transform="translate(250 205)"><g class="m-float"><polygon points="-10.4,6.0 128.2,86.0 128.2,-24.0 -10.4,-104.0" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="138.6,80.0 128.2,86.0 128.2,-24.0 138.6,-30.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0.0,-110.0 138.6,-30.0 128.2,-24.0 -10.4,-104.0" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.5" stroke-linejoin="round"/><polygon points="43.3,-25.0 43.1,-28.6 42.4,-32.3 41.2,-36.2 39.7,-40.0 37.7,-43.8 35.4,-47.3 32.9,-50.6 30.1,-53.5 27.2,-56.0 24.2,-58.0 21.3,-59.4 18.4,-60.3 15.6,-60.6 13.0,-60.3 10.8,-59.3 8.8,-57.8 7.3,-55.8 6.1,-53.3 5.4,-50.3 5.2,-47.0 5.4,-43.4 6.1,-39.7 7.3,-35.8 8.8,-32.0 10.8,-28.2 13.0,-24.7 15.6,-21.4 18.4,-18.5 21.3,-16.0 24.2,-14.0 27.2,-12.6 30.1,-11.7 32.9,-11.4 35.4,-11.7 37.7,-12.7 39.7,-14.2 41.2,-16.2 42.4,-18.7 43.1,-21.7" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.2" stroke-linejoin="round"/><polygon points="55.4,-30.0 116.0,5.0 116.0,-5.0 55.4,-40.0" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.1" stroke-linejoin="round"/><polygon points="55.4,-12.0 100.5,14.0 100.5,6.0 55.4,-20.0" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/><polygon points="6.9,0.0 110.9,60.0 110.9,52.0 6.9,-8.0" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.1" stroke-linejoin="round"/></g></g><g transform="translate(410 300)"><g class="m-float2"><polygon points="-55.4,32.0 27.7,80.0 27.7,70.0 -55.4,22.0" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="83.1,48.0 27.7,80.0 27.7,70.0 83.1,38.0" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0.0,-10.0 83.1,38.0 27.7,70.0 -55.4,22.0" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.5" stroke-linejoin="round"/><line x1="0.0" y1="-10.0" x2="13.9" y2="30.0" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.3" stroke-linecap="round"/><line x1="83.1" y1="38.0" x2="13.9" y2="30.0" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.3" stroke-linecap="round"/></g></g></svg>
+    </div>
+    <div class="view-head">
+      <div class="wrap view-bar">
+        <a class="back" href="#top" data-i18n="backHome">← Volver al inicio</a>
+        <span class="sec-tag" id="secTag"></span>
+        <nav class="subnav" id="subnav" data-i18n-aria="railLabel" aria-label="Secciones"></nav>
+      </div>
+    </div>
+    <div class="view-content" id="viewContent">
+
+    <section class="wrap page" data-page="cases" hidden aria-labelledby="d-cases">
+      <header class="d-head"><p class="eyebrow" data-i18n="workEyebrow"></p><h1 id="d-cases" tabindex="-1" data-i18n="workTitle"></h1><p class="lead" data-i18n="workLead"></p></header>
+      <ul class="case-grid" id="caseGrid"></ul>
+    </section>
+
+    <article id="caseView" class="case-view" hidden><div id="caseBody"></div></article>
+
+    <section class="wrap page" data-page="about" hidden aria-labelledby="d-about">
+      <header class="d-head"><p class="eyebrow" data-i18n="aboutEyebrow"></p><h1 id="d-about" tabindex="-1" data-i18n="aboutTitle"></h1></header>
+      <div class="panel about-grid">
+        <div class="bio" id="bio"></div>
+        <div>
+          <div class="col-block"><h2 class="col-title" data-i18n="xpTitle"></h2><div id="xpList"></div></div>
+          <div class="col-block"><h2 class="col-title" data-i18n="eduTitle"></h2><ul class="edu" id="eduList"></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap page" data-page="process" hidden aria-labelledby="d-process">
+      <header class="d-head"><p class="eyebrow" data-i18n="processEyebrow"></p><h1 id="d-process" tabindex="-1" data-i18n="processTitle"></h1><p class="lead" data-i18n="processLead"></p></header>
+      <div class="panel">
+        <ol class="steps stagger" id="steps"></ol>
+        <p class="process-note" data-i18n="processNote"></p>
+      </div>
+      <div class="panel dev">
+        <h2 class="dev-title" data-i18n="devTitle"></h2>
+        <p class="dev-lead" data-i18n="devLead"></p>
+        <ul class="dev-grid stagger" id="devList"></ul>
+      </div>
+    </section>
+
+    <section class="wrap page" data-page="skills" hidden aria-labelledby="d-skills">
+      <header class="d-head"><p class="eyebrow" data-i18n="skillsEyebrow"></p><h1 id="d-skills" tabindex="-1" data-i18n="skillsTitle"></h1><p class="lead" data-i18n="skillsLead"></p></header>
+      <div class="panel">
+        <div class="skill-cols stagger" id="skillCols"></div>
+        <div class="tool-logos" id="toolLogos"></div>
+        <div class="learning"><h2 class="learning-h" data-i18n="learningTitle"></h2><ul id="learningList"></ul></div>
+      </div>
+    </section>
+
+    <section class="wrap page" data-page="visual" hidden aria-labelledby="d-visual">
+      <header class="d-head"><p class="eyebrow" data-i18n="visualEyebrow"></p><h1 id="d-visual" tabindex="-1" data-i18n="visualTitle"></h1><p class="lead" data-i18n="visualLead"></p></header>
+      <div class="panel bv">
+        <div class="bv-tabs-row">
+          <p class="bv-tabs-label" id="bvTabsLabel" data-i18n="campaignsLabel"></p>
+          <div class="bv-tabs" id="bvTabs" role="group" aria-labelledby="bvTabsLabel"></div>
+        </div>
+        <div class="bv-top">
+          <div class="bv-meta" aria-live="polite">
+            <span class="bv-ind" id="bvIndustry"></span>
+            <span class="bv-rubro" id="bvRubro"></span>
+            <span class="bv-count" id="bvCount"></span>
+          </div>
+          <div class="bv-controls">
+            <div class="seg" role="group" data-i18n-aria="deviceGroup">
+              <button type="button" data-device="desktop" aria-pressed="true" data-i18n="deviceDesktop"></button>
+              <button type="button" data-device="mobile" aria-pressed="false" data-i18n="deviceMobile"></button>
+            </div>
+            <button type="button" class="icon-btn" id="bvPrev" data-i18n-aria="bvPrev">←</button>
+            <button type="button" class="icon-btn" id="bvNext" data-i18n-aria="bvNext">→</button>
+          </div>
+        </div>
+        <div class="bv-stage" id="bvStage"></div>
+        <p class="bv-caption" id="bvCaption"></p>
+      </div>
+      <div class="panel bgallery">
+        <h2 class="col-title" data-i18n="galleryTitle"></h2>
+        <p class="g-hint" data-i18n="galleryHint"></p>
+        <div id="bGallery"></div>
+      </div>
+      <p class="visual-note" data-i18n="visualNote"></p>
+    </section>
+
+    <section class="wrap page" data-page="contact" hidden aria-labelledby="d-contact">
+      <header class="d-head"><p class="eyebrow" data-i18n="contactEyebrow"></p><h1 id="d-contact" tabindex="-1" data-i18n="contactTitle"></h1><p class="lead" data-i18n="contactLead"></p></header>
+      <div class="panel contact-panel">
+        <div class="contact-links">
+          <a class="btn btn-primary" id="emailLink" href="mailto:diego.emma.n@outlook.com">diego.emma.n@outlook.com</a>
+          <a class="btn btn-ghost" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" data-cv="full" href="CV_Diego_Naranjo_ES.pdf">Descargar CV</a>
+        </div>
+        <ul class="contact-meta"><li data-i18n="location"></li><li data-i18n="languages"></li></ul>
+      </div>
+    </section>
+
+    <div class="wrap page-end" id="pageEnd" hidden>
+      <a class="next-sec" id="nextSec" href="#/about"></a>
+      <div class="panel">
+        <h2 class="dev-title" data-i18n="contactTitle"></h2>
+        <p class="dev-lead" data-i18n="contactLead"></p>
+        <div class="contact-links">
+          <a class="btn btn-primary" data-mail href="mailto:diego.emma.n@outlook.com">diego.emma.n@outlook.com</a>
+          <a class="btn btn-ghost" data-linkedin href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" data-cv="full" href="CV_Diego_Naranjo_ES.pdf">Descargar CV</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>© 2026 Diego Naranjo</span>
+        <span data-i18n="languages"></span>
+        <a href="#top" data-i18n="backHome">← Volver al inicio</a>
+      </div>
+    </footer>
+    </div>
+  </div>
+</main>
+
+<dialog class="lb" id="lightbox" aria-labelledby="lbTitle">
+  <div class="lb-inner" id="lbInner">
+    <div class="lb-stage" id="lbStage" aria-hidden="true"></div>
+    <div class="lb-bar">
+      <div><p class="lb-title" id="lbTitle"></p><p class="lb-sub" id="lbSub"></p></div>
+      <div class="lb-ctrl">
+        <button type="button" class="icon-btn" id="lbPrev" data-i18n-aria="lbPrev">←</button>
+        <span class="lb-count" id="lbCount"></span>
+        <button type="button" class="icon-btn" id="lbNext" data-i18n-aria="lbNext">→</button>
+        <button type="button" class="icon-btn" id="lbClose" data-i18n-aria="lbClose">✕</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Documentación de trabajo (solo local, no se publica)
+CLAUDE.md
+docs/
+prompts/
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/
+.claude/

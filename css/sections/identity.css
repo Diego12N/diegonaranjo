@@ -1,0 +1,155 @@
+/* Identidad por sección (Capacidades · Trabajo · Perfil): fondo, patrón, motivos isométricos, elemento 3D que se transforma, etiqueta y menú agrupado. */
+
+.view > *:not(.sec-bg){position:relative; z-index:1;}
+.sec-bg{position:absolute; inset:0 0 auto 0; height:min(900px,110vh); z-index:0; pointer-events:none; overflow:hidden;}
+.sec-bg::before{
+  position:absolute;
+  inset:0;
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 85%);
+  mask-image:linear-gradient(180deg,#000 0%,transparent 85%);
+  content:none;
+}
+.sec-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(55% 60% at 88% 8%, color-mix(in srgb, var(--sec) 28%, transparent), transparent 70%),
+  linear-gradient(180deg, color-mix(in srgb, var(--sec) 6%, transparent), transparent 40%);
+}
+.view[data-section="caps"] .sec-bg::before{
+  background-size:26px 26px;
+  background-image:radial-gradient(rgba(255,179,71,.26) 1.1px, transparent 1.4px);
+}
+.sec-motif{
+  position:absolute;
+  right:clamp(-120px,-4vw,-20px);
+  height:auto;
+  display:none;
+  opacity:.9;
+  color:var(--sec);
+  width:min(600px,50vw);
+  top:calc(var(--nav-h) + 30px);
+}
+.view[data-section="caps"] .sec-motif[data-sec="caps"],
+.view[data-section="work"] .sec-motif[data-sec="work"],
+.view[data-section="profile"] .sec-motif[data-sec="profile"]{
+  display:block;
+}
+.m-float{animation:secFloat 9s ease-in-out infinite;}
+.m-float2{animation:secFloat 7s ease-in-out infinite; animation-delay:-2s;}
+.sec-motif .m-float,
+.sec-motif .m-float2{
+  transform-box:fill-box;
+}
+@keyframes secFloat{0%,100%{translate:0 0;}50%{translate:0 -10px;}}
+.sec-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:.84rem;
+  font-weight:700;
+  color:var(--sec);
+  padding:6px 12px 6px 9px;
+  border-radius:100px;
+  background:color-mix(in srgb, var(--sec) 12%, transparent);
+  border:1px solid color-mix(in srgb, var(--sec) 40%, transparent);
+}
+.sec-ico{width:18px; height:18px; flex:none;}
+.sn-group{display:flex; gap:2px; padding:2px; border-radius:100px; transition:background-color .3s; flex:0 0 auto;}
+.sn-group.is-active{background:color-mix(in srgb, var(--sec) 14%, transparent);}
+.sn-group a{position:relative;}
+.sn-group a::before{
+  position:absolute;
+  left:50%;
+  bottom:3px;
+  width:4px;
+  height:4px;
+  margin-left:-2px;
+  border-radius:50%;
+  background:var(--sec);
+  opacity:.7;
+  content:none;
+  display:none;
+}
+.sn-group a[aria-current="page"]::before{display:none;}
+.subnav .sn-group a[aria-current="page"]{background:var(--sec); color:#140c1a;}
+.sn-sep{flex:0 0 1px; height:18px; background:var(--line-strong); margin:0 4px;}
+.rail-label .sec-ico{color:var(--ac); width:20px; height:20px; margin-left:-2px;}
+html.motion-off .m-float,
+html.motion-off .m-float2{
+  animation-play-state:paused;
+}
+.view[data-section="work"] .sec-bg::before{background-image:repeating-linear-gradient(135deg, rgba(255,106,85,.09) 0 1px, transparent 1px 24px);}
+.view[data-section="profile"] .sec-bg::before{
+  background-image:repeating-radial-gradient(circle at 88% 0%, rgba(167,139,250,.12) 0 1px, transparent 1px 38px);
+}
+.view[data-section="caps"]{
+  --sec-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3 20 7.5 12 12 4 7.5Z M4 7.5V16.5L12 21V12 M20 7.5V16.5L12 21' fill='none' stroke='%23000' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.view[data-section="work"]{
+  --sec-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='6.5' y='3.5' width='14' height='10' rx='2' fill='none' stroke='%23000' stroke-width='1.8'/%3E%3Crect x='3.5' y='8.5' width='14' height='11' rx='2' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
+}
+.view[data-section="profile"]{
+  --sec-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='8.5' fill='none' stroke='%23000' stroke-width='2'/%3E%3Ccircle cx='12' cy='10' r='3' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M6.8 18.2c1.2-2.3 3-3.4 5.2-3.4s4 1.1 5.2 3.4' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
+}
+.sec-pat{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity .9s ease;
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 85%);
+  mask-image:linear-gradient(180deg,#000 0%,transparent 85%);
+}
+.sec-pat[data-sec="caps"]{background-image:radial-gradient(rgba(255,179,71,.26) 1.1px, transparent 1.4px); background-size:26px 26px;}
+.sec-pat[data-sec="work"]{background-image:repeating-linear-gradient(135deg, rgba(255,106,85,.09) 0 1px, transparent 1px 24px);}
+.sec-pat[data-sec="profile"]{background-image:repeating-radial-gradient(circle at 88% 0%, rgba(167,139,250,.12) 0 1px, transparent 1px 38px);}
+.view[data-section="caps"] .sec-pat[data-sec="caps"],
+.view[data-section="work"] .sec-pat[data-sec="work"],
+.view[data-section="profile"] .sec-pat[data-sec="profile"]{
+  opacity:1;
+}
+.view .sec-bg .sec-motif{
+  display:block;
+  opacity:0;
+  transform:translate3d(0,22px,0) scale(.965);
+  transform-origin:70% 40%;
+  transition:opacity .7s ease, transform 1.1s cubic-bezier(.22,1,.36,1);
+}
+.view[data-section="caps"] .sec-bg .sec-motif[data-sec="caps"],
+.view[data-section="work"] .sec-bg .sec-motif[data-sec="work"],
+.view[data-section="profile"] .sec-bg .sec-motif[data-sec="profile"]{
+  opacity:var(--mo,1);
+  transform:none;
+  transition-delay:.18s;
+}
+.view.sec-enter .sec-bg{animation:secEnter 1s cubic-bezier(.22,1,.36,1) both;}
+@keyframes secEnter{from{opacity:0; transform:translate3d(0,18px,0);} to{opacity:1; transform:none;}}
+.sec-morph{
+  position:absolute;
+  top:calc(var(--nav-h) + 30px);
+  right:clamp(-120px,-4vw,-20px);
+  width:min(600px,50vw);
+  height:auto;
+  color:var(--sec);
+  opacity:var(--mo,1);
+  transition:opacity .7s ease;
+  overflow:visible;
+}
+.sec-morph .mo-float{animation:secFloat 8s ease-in-out infinite; animation-delay:-4s;}
+html.motion-off .sec-morph .mo-float{animation-play-state:paused;}
+@media (max-width:720px){
+  .sec-tag span{display:none;}
+  .sec-tag{padding:6px;}
+}
+@media (max-width:960px){
+  .sec-motif{width:86vw; right:-26vw;}
+  .sec-morph{width:86vw; right:-26vw;}
+}
+@media (prefers-reduced-motion:reduce){
+  .sec-pat,
+  .view .sec-bg .sec-motif{
+    transition:none;
+  }
+  .view.sec-enter .sec-bg{animation:none;}
+  .sec-morph .mo-float{animation:none;}
+}
