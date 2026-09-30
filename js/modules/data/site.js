@@ -4,8 +4,8 @@ export const CONFIG = {
   "email": "diego.emma.n@outlook.com",
   "linkedin": "https://www.linkedin.com/in/diego-emmanuel-naranjo-7ba10513a/",
   "cv": {
-    "es": "CV_Diego_Naranjo_ES.pdf",
-    "en": null
+    "es": "CV_Diego_Naranjo_UI-UX_ES.pdf",
+    "en": "CV_Diego_Naranjo_UI-UX_EN.pdf"
   }
 };   // el CV se sirve desde la raíz del sitio
 

@@ -63,7 +63,8 @@ export const I18N = {
         "points": [
           "Diseño y rediseño de home, landings y fichas de producto para clientes de la agencia, en desktop y mobile.",
           "Contacto directo con clientes: relevamiento de requerimientos, propuestas, presentación e iteraciones.",
-          "Colaboración con developers en módulos custom como semáforos de stock, filtros de búsqueda y checkout.",
+          "Participé en el diseño de tres módulos custom para PrestaShop (indicadores de stock, filtros de búsqueda y checkout) y desarrollé prototipos funcionales con asistencia de IA.",
+          "Colaboración con developers en handoff, viabilidad técnica y QA visual.",
           "Ajustes directos de HTML/CSS en templates (.tpl de PrestaShop) y QA visual de la implementación.",
           "Diseño de banners, piezas visuales y assets de campaña para clientes de la agencia."
         ],
@@ -71,7 +72,7 @@ export const I18N = {
       },
       {
         "role": "Atención al cliente y Control de calidad",
-        "org": "Empresa de telecomunicaciones",
+        "org": "Apex America (cuenta de telecomunicaciones)",
         "when": "2016 — 2022",
         "points": [
           "Atención técnica a usuarios por chat, WhatsApp y teléfono, incluido un período de tres meses como analista de control de calidad."
@@ -191,14 +192,12 @@ export const I18N = {
     "learningTitle": "Actualmente aprendiendo",
     "learning": [
       "Google UX Design (Coursera)",
-      "Meta Front-End Developer (Coursera)",
-      "SAP Fiori / SAPUI5",
-      "React"
+      "Meta Front-End Developer (Coursera)"
     ],
     "contactEyebrow": "Contacto",
     "contactTitle": "¿Buscás un UI / UX Designer para tu equipo?",
     "contactLead": "Estoy abierto a posiciones remotas o híbridas en equipos de producto, empresas IT y agencias digitales.",
-    "languages": "Español nativo · Inglés intermedio",
+    "languages": "Español nativo · Inglés B1",
     "caseBack": "← Volver a proyectos",
     "caseNext": "Siguiente proyecto",
     "tocTitle": "En este caso",
@@ -340,7 +339,8 @@ export const I18N = {
         "points": [
           "Design and redesign of home pages, landing pages and product pages for agency clients, on desktop and mobile.",
           "Direct client contact: gathering requirements, proposing solutions, presenting and iterating.",
-          "Working with developers on custom modules such as stock indicators, search filters and checkout.",
+          "Contributed to the design of three custom PrestaShop modules (stock indicators, search filters, checkout) and built working prototypes using AI-assisted development.",
+          "Working with developers on handoff, technical feasibility and visual QA.",
           "Hands-on HTML/CSS adjustments in templates (PrestaShop .tpl) and visual QA of the implementation.",
           "Design of banners, visual pieces and campaign assets for agency clients."
         ],
@@ -348,7 +348,7 @@ export const I18N = {
       },
       {
         "role": "Customer Support & Quality Control",
-        "org": "Telecommunications company",
+        "org": "Apex America (telecom account)",
         "when": "2016 — 2022",
         "points": [
           "Technical support for users via chat, WhatsApp and phone, including three months as a quality control analyst."
@@ -468,14 +468,12 @@ export const I18N = {
     "learningTitle": "Currently learning",
     "learning": [
       "Google UX Design (Coursera)",
-      "Meta Front-End Developer (Coursera)",
-      "SAP Fiori / SAPUI5",
-      "React"
+      "Meta Front-End Developer (Coursera)"
     ],
     "contactEyebrow": "Contact",
     "contactTitle": "Looking for a UI / UX Designer for your team?",
     "contactLead": "I’m open to remote or hybrid roles in product teams, tech companies and digital agencies.",
-    "languages": "Spanish (native) · English (intermediate)",
+    "languages": "Spanish (native) · English (B1)",
     "caseBack": "← Back to projects",
     "caseNext": "Next project",
     "tocTitle": "In this case",
