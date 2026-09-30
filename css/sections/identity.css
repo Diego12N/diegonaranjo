@@ -137,6 +137,19 @@ html.motion-off .m-float2{
 }
 .sec-morph .mo-float{animation:secFloat 8s ease-in-out infinite; animation-delay:-4s;}
 html.motion-off .sec-morph .mo-float{animation-play-state:paused;}
+/* Menú compacto (mobile): el grupo activo muestra sus páginas; los otros, su ícono de sección en su color. */
+.sn-sec{display:none;}
+.subnav.is-compact a{display:inline-flex; align-items:center; min-height:40px;}
+.subnav.is-compact .sn-group:not(.is-active) a:not(.sn-sec),
+.subnav.is-compact .sn-group.is-active .sn-sec{display:none;}
+.subnav.is-compact .sn-sec{justify-content:center; min-width:44px; padding:0 12px; color:var(--sec);}
+.subnav.is-compact .sn-sec:hover{color:var(--sec); background:color-mix(in srgb, var(--sec) 14%, transparent);}
+.subnav.is-compact{justify-content:space-between;}
+@media (max-width:380px){
+  .subnav.is-compact a{padding:0 10px;}
+  .subnav.is-compact .sn-sec{min-width:40px;}
+  .subnav.is-compact .sn-sep{margin:0 2px;}
+}
 @media (max-width:720px){
   .sec-tag span{display:none;}
   .sec-tag{padding:6px;}

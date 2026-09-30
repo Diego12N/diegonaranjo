@@ -13,13 +13,24 @@ export const secOf = v => !v || v.type === 'home' ? null : v.type === 'case' ? '
 export function renderSubnav(cur){
   requestAnimationFrame(updateRailFade);
   $('#subnav').innerHTML = Object.entries(SECTIONS).map(([sec, s]) =>
-    `<div class="sn-group" data-sec="${sec}" style="--sec:${s.ac}">${s.pages.map(p => `<a href="#/${p}">${p === 'cases' ? t('subCases') : pageTitle(p)}</a>`).join('')}</div>`
+    `<div class="sn-group" data-sec="${sec}" style="--sec:${s.ac}"><a class="sn-sec" href="#/${s.pages[0]}" aria-label="${t(s.key)}" title="${t(s.key)}">${SEC_ICON[sec]}</a>${s.pages.map(p => `<a href="#/${p}">${p === 'cases' ? t('subCases') : pageTitle(p)}</a>`).join('')}</div>`
   ).join('<span class="sn-sep" aria-hidden="true"></span>');
   markSubnav(cur);
 }
+/* Menú compacto: si los grupos no entran en una línea (mobile), solo el grupo de la sección
+   activa muestra sus páginas y los otros quedan como su ícono de sección. Se mide con los
+   textos reales, así funciona igual en ES y EN. */
+export function fitSubnav(){
+  const n = $('#subnav'); if (!n || !n.clientWidth) return;
+  n.classList.remove('is-compact');
+  if (n.scrollWidth > n.clientWidth + 1) n.classList.add('is-compact');
+}
 export function markSubnav(cur){
   const active = !cur ? '' : (cur.type === 'case' || (cur.type === 'page' && cur.key === 'visual')) ? '#/cases' : cur.type === 'page' ? '#/' + cur.key : '';
-  $$('#subnav a').forEach(a => { if (a.getAttribute('href') === active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  $$('#subnav a:not(.sn-sec)').forEach(a => { if (a.getAttribute('href') === active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  const sec = secOf(cur);
+  $$('#subnav .sn-group').forEach(g => g.classList.toggle('is-active', g.dataset.sec === sec));
+  fitSubnav();
   const on = $('#subnav a[aria-current]');
   if (on) { const n = $('#subnav'); if (on.offsetLeft < n.scrollLeft || on.offsetLeft + on.offsetWidth > n.scrollLeft + n.clientWidth) n.scrollTo({ left: on.offsetLeft - 12, behavior: REDUCED ? 'auto' : 'smooth' }); }
 }

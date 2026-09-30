@@ -10,7 +10,7 @@ import { renderAbout, renderProcess, renderSkills, renderCasesPage, renderNextSe
 import { renderViewer, renderTabs, renderGallery, syncTabs, lb, renderLightbox, initVisual, initCampaignTabs } from './modules/visual.js';
 import { renderCase, updateProgress } from './modules/case-study.js';
 import { initShowcase } from './modules/showcase.js';
-import { renderSubnav } from './modules/sections.js';
+import { renderSubnav, fitSubnav } from './modules/sections.js';
 import { curView, go, initRouter } from './modules/router.js';
 
 /* ---------- Idioma: vuelve a dibujar todo el contenido ---------- */
@@ -50,6 +50,8 @@ window.addEventListener('scroll', () => {
   if (!$('#caseView').hidden) updateProgress();
 }, { passive: true });
 initShowcase();
+window.addEventListener('resize', fitSubnav, { passive: true });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitSubnav);
 
 /* ---------- Arranque ---------- */
 setLang(initialLang());
